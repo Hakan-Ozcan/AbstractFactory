@@ -5,23 +5,23 @@ class Program
     static void Main(string[] args)
     {
         // Orman dünyası için fabrikayı kullanarak karakter donanımını yaratma
-        KarakterDonanimFabrikasi ormanFabrikasi = new OrmanDonanimFabrikasi();
-        Silah ormanSilahi = ormanFabrikasi.OlusturSilah();
-        Zirh ormanZirhi = ormanFabrikasi.OlusturZirh();
+        CharacterStaffFactory forestFactory = new ForestStaffFactory();
+        Weapon forestweapon = forestFactory.CreateWeapon();
+        Armor forestarmor = forestFactory.CreateArmor();
 
-        Console.WriteLine("Orman dünyası karakter donanımı:");
-        Console.WriteLine("Silah: " + ormanSilahi.Ad);
-        Console.WriteLine("Zırh: " + ormanZirhi.Ad);
+        Console.WriteLine("Forest world character gear:");
+        Console.WriteLine("Weapon: " + forestweapon.Name);
+        Console.WriteLine("Armor: " + forestarmor.Name);
 
         Console.WriteLine();
 
         // Dağ dünyası için fabrikayı kullanarak karakter donanımını yaratma
-        KarakterDonanimFabrikasi dagFabrikasi = new DagDonanimFabrikasi();
-        Silah dagSilahi = dagFabrikasi.OlusturSilah();
-        Zirh dagZirhi = dagFabrikasi.OlusturZirh();
+        CharacterStaffFactory mountainFactory = new MountainStaffFactory();
+        Weapon mountainweapon = mountainFactory.CreateWeapon();
+        Armor mountainarmor = mountainFactory.CreateArmor();
 
-        Console.WriteLine("Dağ dünyası karakter donanımı:");
-        Console.WriteLine("Silah: " + dagSilahi.Ad);
-        Console.WriteLine("Zırh: " + dagZirhi.Ad);
+        Console.WriteLine("Mountain world character gear:");
+        Console.WriteLine("Weapon: " + mountainweapon.Name);
+        Console.WriteLine("Armor: " + mountainarmor.Name);
     }
 }

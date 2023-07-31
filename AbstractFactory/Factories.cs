@@ -7,37 +7,37 @@ using System.Threading.Tasks;
 namespace AbstractFactory
 {
     // Abstract Factory sınıfı
-    public abstract class KarakterDonanimFabrikasi
+    public abstract class CharacterStaffFactory
     {
-        public abstract Silah OlusturSilah();
-        public abstract Zirh OlusturZirh();
+        public abstract Weapon CreateWeapon();
+        public abstract Armor CreateArmor();
     }
 
     // Orman dünyası için fabrika sınıfı
-    public class OrmanDonanimFabrikasi : KarakterDonanimFabrikasi
+    public class ForestStaffFactory : CharacterStaffFactory
     {
-        public override Silah OlusturSilah()
+        public override Weapon CreateWeapon()
         {
-            return new OrmanSilahi();
+            return new ForestWeapon();
         }
 
-        public override Zirh OlusturZirh()
+        public override Armor CreateArmor()
         {
-            return new OrmanZirhi();
+            return new ForestArmor();
         }
     }
 
     // Dağ dünyası için fabrika sınıfı
-    public class DagDonanimFabrikasi : KarakterDonanimFabrikasi
+    public class MountainStaffFactory : CharacterStaffFactory
     {
-        public override Silah OlusturSilah()
+        public override Weapon CreateWeapon()
         {
-            return new DagSilahi();
+            return new MountainWeapon();
         }
 
-        public override Zirh OlusturZirh()
+        public override Armor CreateArmor()
         {
-            return new DagZirhi();
+            return new MountainArmor();
         }
     }
 

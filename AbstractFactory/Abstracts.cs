@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace AbstractFactory
 {
     // Silah sınıfı
-    public abstract class Silah
+    public abstract class Weapon
     {
-        public abstract string Ad { get; }
+        public abstract string Name { get; }
     }
 
     // Zırh sınıfı
-    public abstract class Zirh
+    public abstract class Armor
     {
-        public abstract string Ad { get; }
+        public abstract string Name { get; }
     }
 }

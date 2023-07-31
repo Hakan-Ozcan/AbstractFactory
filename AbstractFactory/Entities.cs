@@ -10,27 +10,27 @@ namespace AbstractFactory
   
 
     // Orman dünyası için silah sınıfı
-    public class OrmanSilahi : Silah
+    public class ForestWeapon : Weapon
     {
-        public override string Ad => "Orman Silahı";
+        public override string Name => "Forest Weapon";
     }
 
     // Orman dünyası için zırh sınıfı
-    public class OrmanZirhi : Zirh
+    public class ForestArmor : Armor
     {
-        public override string Ad => "Orman Zırhı";
+        public override string Name => "Forest Armor";
     }
 
     // Dağ dünyası için silah sınıfı
-    public class DagSilahi : Silah
+    public class MountainWeapon : Weapon
     {
-        public override string Ad => "Dağ Silahı";
+        public override string Name => "Mountain Weapon";
     }
 
     // Dağ dünyası için zırh sınıfı
-    public class DagZirhi : Zirh
+    public class MountainArmor : Armor
     {
-        public override string Ad => "Dağ Zırhı";
+        public override string Name => "Mountain Armor";
     }
 
 }
