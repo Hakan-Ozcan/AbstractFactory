@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    Abstract Factory ve Factory Method tasarım desenleri, nesne yaratma işlemlerini soyutlama ve alt sınıflara taşıma amacıyla kullanılan iki farklı desen türüdür. Her iki desen de nesne yaratma işlemlerini istemci kodundan bağımsızlaştırır ve böylece daha esnek ve ölçeklenebilir bir yapı sağlar. Ancak, bu iki desen arasında bazı temel farklar vardır:
+
+    Amacı:
+
+    Factory Method: Factory Method deseni, bir süper sınıf içinde bir arayüz tanımlar ve bu arayüzü uygulayan alt sınıfların nesne yaratma süreçlerini belirler. Yani, bir sınıfın alt sınıflarının nesne oluşturma sürecini değiştirmesine izin verir.
+    Abstract Factory: Abstract Factory deseni, birbiriyle ilişkili birden fazla nesne ailesini yaratma işlemlerini gruplandırır. Yani, birbirleriyle ilişkili nesne gruplarını oluşturmayı sağlar.
+
+    Odak Noktası:
+
+    Factory Method: Odak noktası, alt sınıfların nesne yaratma süreçlerini belirlemek ve istemci kodunun nesne yaratma sürecine dahil olmadan nesneleri elde etmesini sağlamaktır.
+    Abstract Factory: Odak noktası, ilgili nesnelerin ailesini yaratmak ve bunları birbiriyle uyumlu bir şekilde kullanmaktır.
+
+    İlişki:
+
+    Factory Method: Factory Method deseni, tek bir nesne türü (ürün ailesi) için birden fazla farklı alt sınıf oluşturmak için kullanılır.
+    Abstract Factory: Abstract Factory deseni, birbirleriyle ilişkili birden fazla nesne ailesini yaratmak için kullanılır. Her aile kendi içinde birbiriyle uyumlu nesnelerden oluşur.
+
+    Hiyerarşi:
+
+    Factory Method: Factory Method deseni, bir süper sınıf içinde nesne yaratma yöntemini tanımlayan bir arayüz ve bu arayüzü uygulayan alt sınıflardan oluşur.
+    Abstract Factory: Abstract Factory deseni, birden fazla soyut fabrika ve her bir fabrikayı uygulayan somut fabrikalardan ve bu fabrikaların altında soyut ürün sınıfları ve bu ürünleri uygulayan somut ürün sınıflarından oluşur.
+    Özetle, Factory Method deseni tek bir nesne türü için farklı alt sınıflar oluşturmak için kullanılırken, Abstract Factory deseni birbiriyle ilişkili birden fazla nesne ailesini yaratmak için kullanılır ve bu nesne ailelerini bir arada kullanmayı sağlar.
+
+</body>
+</html>
